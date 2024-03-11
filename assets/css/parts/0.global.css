@@ -13,7 +13,7 @@
   --clr-light: #535359;
   --clr-accent: #F6002C;
   --clr-disabled: #EAEAF3;
-  --tr: .3s linear;
+  --tr: .5s ease-out;
 }
 body, h1, h2, h3, h4, p, figure, blockquote, dl, dd, ul, li, button {
   margin: 0;
@@ -28,6 +28,7 @@ html {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  background-color: #0f2b55;
 }
 main{
 	z-index: 0;
@@ -38,6 +39,9 @@ a{
 	-webkit-transition-duration: var(--tr) !important;
 	-o-transition-duration: var(--tr) !important;
 	transition-duration: var(--tr) !important;
+  -webkit-transition-property: all !important;
+  -o-transition-property: all !important;
+  transition-property: all !important;
   cursor: pointer;
 }
 a:hover{
@@ -45,6 +49,9 @@ a:hover{
 	-webkit-transition-duration: var(--tr) !important;
 	-o-transition-duration: var(--tr) !important;
 	transition-duration: var(--tr) !important;
+  -webkit-transition-property: all !important;
+  -o-transition-property: all !important;
+  transition-property: all !important;
 }
 a:focus-visible{
   outline: none;

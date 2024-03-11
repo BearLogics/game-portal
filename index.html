@@ -17,10 +17,83 @@
 	<link rel="icon" href="/assets/img/favicons/favicon" type="image/x-icon">
 	
 	<link rel="stylesheet" href="./assets/css/main.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./style.css">
 	<script defer src="./assets/js/main.js"></script>
+	
+	
 </head>
 <body>
-	1234
+	<section class="hero-list">
+		<div class="container">
+			<div class="row">
+				<ul class="hero-list-tabs">
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabAll')">Все</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabTank')">Танк</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabFighter')">Боец</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabAssasin')">Убийца</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabMage')">Маг</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabArcher')">Стрелок</a></li>
+					<li><a class="hero-list-tab" onclick="heroType(event, 'TabSupport')">Поддержка</a></li>
+				</ul>
+				<div class="hero-list-block">
+					<div class="hero-list-content active" id="TabAll">
+						<div class="auto-grid">
+							<div class="hero-list-card">
+								<div class="wrapper">
+									<div class="hero-list-card-img">
+										<img src="./assets/img/heroes/Rafaela/hero-card-rafaela.png" alt="MLBB Рафаэль">
+									</div>
+									<div class="hero-list-card-bottom">
+										<div class="cost">
+											<div class="battle_points">
+												<a href="#">
+													<img src="./assets/img/icons/Battle_Points.png">
+												</a>
+												<span>6400</span>
+											</div>
+											<!-- <div class="tickets">
+												<a href="#">
+													<img src="./assets/img/icons/Ticket.png">
+												</a>
+												<span>254</span>
+											</div> -->
+											<div class="diamonds">
+												<a href="#">
+													<img src="./assets/img/icons/Diamond.png">
+												</a>
+												<span>699</span>
+											</div>
+										</div>
+										<div class="hero-list-name">Рафаэль</div>
+										
+									</div>
+								</div>
+								<a href="#" class="btn mlbb-0">Подробнее</a>
+							</div>
+							
+						</div>
+					</div>
+					<div class="hero-list-content" id="TabTank">
+						<p>Танки</p>
+					</div>
+					<div class="hero-list-content" id="TabFighter">
+						<p>Бойцы</p>
+					</div>
+					<div class="hero-list-content" id="TabAssasin">
+						<p>Убийцы</p>
+					</div>
+					<div class="hero-list-content" id="TabMage">
+						<p>Маги</p>
+					</div>
+					<div class="hero-list-content" id="TabArcher">
+						<p>Стрелки</p>
+					</div>
+					<div class="hero-list-content" id="TabSupport">
+						<p>Поддержка</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

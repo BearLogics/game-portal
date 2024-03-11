@@ -64,7 +64,23 @@ section{
 	-moz-column-gap: 30px;
 	column-gap: 30px;
 	justify-content: space-between;
-	color: var(--clr-white);
+	color: var(--clr-black);
+}
+.container>* {
+	grid-column: content;
+}
+.auto-grid{
+	--min-w: 250px;
+	--max-w: 1fr;
+	--c-g: 30px;
+	--r-g: 30px;
+	display: -ms-grid;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(var(--min-w), 100%), var(--max-w)));
+	-webkit-column-gap: var(--c-g);
+	-moz-column-gap: var(--c-g);
+	column-gap: var(--c-g);
+	row-gap: var(--r-g);
 }
 .display-none{
 	display: none;
